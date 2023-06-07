@@ -1,0 +1,121 @@
+/* Layout CSS Grid Styles */
+
+.grid {
+	display:grid;
+	row-gap:20px;
+	column-gap:20px;
+}
+
+#education .grid {
+	grid-template-columns:repeat(2, 1fr);
+}
+
+#family .grid, #fandom .grid  {
+	grid-template-columns:repeat(3, 1fr);
+}
+
+
+aside.picture {
+	grid-column: span 3;
+	justify-self: center;
+}
+
+section {
+	border: 1px solid gray;
+	border-radius: 4px;
+}
+
+section.no-border {
+	border: 0;
+}
+
+section {
+	padding: 0px 10px;
+}
+
+
+
+/* Smaller screen size -- change the grid to a 2-column layout */
+@media (max-width: 1366px) {
+	#education .grid, #family .grid, #fandom .grid, #location .grid {
+		display:grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	aside.picture {
+		grid-column: span 1;
+	}
+
+	figure {
+		margin-left:0px;
+	}
+
+}
+
+
+/* Tablet size -- change bg color to cream, shrink fonts, change to single-column grid. */ 
+@media (max-width: 768px) {
+
+	body {
+		background-color:#fcffee;
+	}
+
+	main {
+		margin: 120px 10px 70px 10px !important;
+	}
+
+
+	#education .grid, #family .grid, #fandom .grid, #location .grid {
+		display:grid;
+		grid-template-columns: 1fr;
+	}
+
+
+	section, article {
+		font-size: 1.0em;
+		line-height: 1.2em;
+		border-width: 0;
+	}
+
+	/*
+	nav ul {
+		margin: 0.5em 0.2em;
+	}
+
+	nav li {
+		width: 6em;
+		padding: 10px;
+		margin:5px 3px;
+		font-size: .7em;
+	}
+	*/
+
+	header h3 {
+		margin: 0.5em;
+	}
+
+	
+	/* Turn off the default main menu and switch to the hamburger menu on smaller screens */
+	#main-menu {
+		display: none;
+	}
+	#hamburger-menu {
+		display: inline;
+	}
+
+}
+
+
+
+/* Phone size -- change bg color to soft pink, shrink fonts further
+	Note -- it will also pick up the 1-column grid seting above.  */
+@media (max-width: 480px) {
+	body {
+		background-color:#ffeef8;
+	}
+
+	section, article {
+		font-size: 0.9em;
+		line-height: 1.1em;
+	}
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./assets/styles/main.css" rel="stylesheet">
+        <script src="./assets/scripts/apis.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<title></title>
+    </head>
+
+    <body>
+		<!-- Vue.js Header Component -->
+		<header id="vueHeader">
+			<site-header></site-header>
+		</header>
+
+		<!-- Load the script that activates the vue.js header component -->
+		<script type="module" src="./assets/scripts/vue_header_component.js"></script>
+
+        <main>
+			<h1>Check Stock Prices</h1>
+
+			<section class="no-border stock">
+				<article>
+					<label for="StockSymbols">Enter one or more stock symbols, separated by a comma: </label>
+                    <input id="StockSymbols" type="text">
+                    <input type="button" class="api_button" value="Check Stock Prices" onclick="getStockPrices()">
+                    <div id="data"></div>
+                    <div id="error"></div>
+				</article>
+			</section>
+        </main>
+
+		<!-- Vue.js Footer Component -->
+		<footer id="vueFooter">
+			<site-footer></site-footer>
+		</footer>
+
+		<!-- Load the script that activates the vue.js footer component -->
+		<script type="module" src="./assets/scripts/vue_footer_component.js"></script>
+        
+    </body>
+</html>

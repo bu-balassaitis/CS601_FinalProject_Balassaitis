@@ -1,0 +1,21 @@
+/* Figure CSS Styles */
+figure {
+	/* float:right; */
+}
+
+figure img {
+	margin:20px;
+	box-shadow: 0px 0px 20px 3px var(--drop-shadow);
+}
+
+figure img:hover {
+	box-shadow: 0px 0px 20px 15px var(--drpepper-dark);
+	transform: scale(1.25);
+}
+
+
+figcaption {
+	font-style: italic;
+	font-size: 0.85em;
+}
+

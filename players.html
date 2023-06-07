@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./assets/styles/main.css" rel="stylesheet">
+        <script src="./assets/scripts/apis.js"></script>
+		<script src="./assets/scripts/validation.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<title></title>
+    </head>
+
+    <body>
+		<!-- Vue.js Header Component -->
+		<header id="vueHeader">
+			<site-header></site-header>
+		</header>
+
+		<!-- Load the script that activates the vue.js header component -->
+		<script type="module" src="./assets/scripts/vue_header_component.js"></script>
+
+        <main class="players">
+			<h1>Favorite Players</h1>
+
+			<section class="no-border">
+				<article>
+					<p>This page is backed by a NoSql database to store a list of my favorite players</p>
+
+					<form id="addPlayer" onsubmit="return false;">
+
+						<label for="name">Name</label>
+						<label for="team">Team</label>
+						<label for="position">Position</label>
+
+						<input type="text" name="name" id="name" required pattern="^[a-zA-Z0-9 ,.]{8,}$" autofocus tabindex="1">
+						<input type="text" name="team" id="team" required pattern="^[a-zA-Z0-9 ]{10,}$" tabindex="2">
+						<input type="text" name="position" id="position" required tabindex="3">
+
+						<span class="error" id="error_name"></span>
+						<span class="error" id="error_team"></span>
+						<span class="error" id="error_position"></span>
+		
+						<input type="button" id="btnAddPlayer" class="api_button" value="Add Player" onclick="addPlayer()" disabled>
+					</form>
+
+
+                    <input type="button" class="api_button" value="Display Players" onclick="showPlayers()">
+					
+                    <div id="data"></div>
+					<div id="error"></div>
+				</article>
+			</section>
+        </main>
+
+		<!-- Vue.js Footer Component -->
+		<footer id="vueFooter">
+			<site-footer></site-footer>
+		</footer>
+
+		<!-- Load the script that activates the vue.js footer component -->
+		<script type="module" src="./assets/scripts/vue_footer_component.js"></script>
+
+    </body>
+</html>

@@ -1,0 +1,11 @@
+ /* Printer Styles -- hide the header and footer and set body margins to 0*/
+
+@media print {
+   header, footer, video {
+      display:none;
+   }
+
+   body, main {
+      margin:0 !important;
+   }
+}

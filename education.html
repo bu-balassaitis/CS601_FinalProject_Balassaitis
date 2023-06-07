@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./assets/styles/main.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<title>The Braduate</title>
+	</head>
+
+	<body>
+		<!-- Vue.js Header Component -->
+		<header id="vueHeader">
+			<site-header></site-header>
+		</header>
+
+		<!-- Load the script that activates the vue.js header component -->
+		<script type="module" src="./assets/scripts/vue_header_component.js"></script>
+
+
+		<!-- Main content area -->
+		<main id="education">
+			<h1>Education</h1>
+
+			<div class="grid">
+				<section id="drexel">
+					<h2>Drexel University</h2>
+					<article>
+						<p>After high school, I enrolled at <a href="https://drexel.edu/" target="_blank">Drexel University <img src="./assets/images/external_link_icon.png" alt="External Link Icon" height="16" width="16"></a> in Philadelphia.</p>
+						<p>I chose Drexel for these reasons:</p>
+						<ul>
+							<li>They had a new college of Information Science and Technology, which was not common in the mid-1990s</li>
+							<li>Coooperative Education provided the opportunity to gain real-world experience while in school</li>
+							<li>Proximity -- I wasn't interested on going away to school and the 25-minute drive made it easily commutable</li>
+						</ul>
+						
+					</article>
+					<article id="co-op">
+						<h4>Cooperative Education</h4>
+						<p>The co-op program was excellent. Bachelor degree programs are typically 4 years, but the co-op program was a 5-year degree, with time built-in to gain work experience in order to start building a resume and get a head start over other graduates.</p>
+						<p>In the middle 3 years, students would work for 6 months and go to school for 6 months. (The semesters run on a quarterly schedule to make this work.)</p>
+						<p>It was a tremendous experience to go through the process of applying, interviewing, and then gaining real-world experience while still in school. It also provided a much better income than minimum wage work.</p>
+						<p>I ended up getting hired full-time after my third co-op cycle and my employer offered to pay my tuition as I finished up my senior year of classes at night.</p>
+					</article>
+					<article>
+						<h4>ALN</h4>
+						<p>During my third year as an undergraduate, I had the opportunity to work in my college's research lab, where the graduate students and a few professors were building what was among the very first online learning programs, dubbed the <a href="https://thejournal.com/articles/1995/10/01/asynchronous-learning-networks-drexels-experience.aspx?m=1" target="_blank">Asynchronous Learning Network (ALN) <img src="./assets/images/external_link_icon.png" alt="External Link Icon" height="16" width="16"></a>.</p>
+						<p>This program provided remote students the opportunity to earn a Master of Science in Information Systems completely online, circa 1995. This courses were built with Lotus Notes. The experience I gained here launched my career developing with the Notes platform.</p>
+					</article>
+					<article>
+						<h4>Graduation</h4>
+						<p>I was originally scheduled to graduate in 1999, but because I completed my senior year of classes at night while working full-time -- and also because of a car accident that necessitated two spinal surgeries -- I completed my studies and graduated in the spring of 2001, finishing at the top of my class with 4.0 GPA.</p>
+					</article>
+
+					<!-- Aside with related image -->
+					<aside>	
+						<figure>
+							<!-- Image from https://commons.wikimedia.org/wiki/File:Drexel-logo.png, used with Creative Commons Licnense-->
+							<img src="./assets/images/drexel.png" alt="Drexel University" height="180" width="250">
+							<figcaption>Drexel University [1]</figcaption>
+						</figure>
+					</aside>
+				</section>
+
+				<section id="bu">
+					<h2>Boston University</h2>
+					<article>
+						<p>I am currently enrolled in the MS in Software Development program at <a href="http://www.bu.edu" target="_blank">BU <img src="./assets/images/external_link_icon.png" alt="External Link Icon" height="16" width="16"></a>. I chose this program for several reasons:</p>
+						<ul>
+							<li>Excellent academic reputation</li>
+							<li><a href="https://www.usnews.com/education/online-education/boston-university-OCIT0007/computer-information-technology" target="_blank">High ranking <img src="./assets/images/external_link_icon.png" alt="External Link Icon" height="16" width="16"></a> of the online master's program</li>
+							<li>Uniqueness of the degree in software development and not just CS or IT</li>
+						</ul>
+						
+						<p>I'm spreading the courses out so I can maximize the amount that my employer will pay. I have completed 20 credits so far, including the following courses:</p>
+						<table>
+							<thead>
+								<tr>
+									<th>Course #</th>
+									<th>Course Title</th>
+									<th>Semester Taken</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>CS 520</td>
+									<td>Information Structures</td>
+									<td>2021 Summer 2</td>
+								</tr>
+								<tr>
+									<td>CS 669</td>
+									<td>Database Design and Implementation</td>
+									<td>2021 Fall 1</td>
+								</tr>
+								<tr>
+									<td>CS 622</td>
+									<td>Advanced Programming</td>
+									<td>2022 Spring 1</td>
+								</tr>
+								<tr>
+									<td>CS 665</td>
+									<td>Software Design and Patterns</td>
+									<td>2022 Summer 2</td>
+								</tr>
+								<tr>
+									<td>CS 526</td>
+									<td>Data Structures & Algorithms</td>
+									<td>2022 Fall  2</td>
+								</tr>
+							</tbody>
+						</table>
+					</article>
+					<!-- Aside with related image -->
+					<aside>	
+						<figure>
+							<!-- Image from https://www.bu.edu/home/img/masterplate112x50.png, used with BU faculty/staff permission-->
+							<img src="./assets/images/bu.png" alt="Boston University" height="50" width="112">
+							<figcaption>Boston University [2]</figcaption>
+						</figure>
+					</aside>
+				</section>
+
+			</div>
+
+		</main>
+
+
+		<!-- Vue.js Footer Component -->
+		<footer id="vueFooter">
+			<site-footer></site-footer>
+		</footer>
+
+		<!-- Load the script that activates the vue.js footer component -->
+		<script type="module" src="./assets/scripts/vue_footer_component.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./assets/styles/main.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<title>Brad to the Bone</title>
+	</head>
+
+	<body>
+		<!-- Consistent page header -->
+		<!-- Vue.js Header Component -->
+		<header id="vueHeader">
+			<site-header></site-header>
+		</header>
+
+		<!-- Load the script that activates the vue.js header component -->
+		<script type="module" src="./assets/scripts/vue_header_component.js"></script>
+
+
+		<!-- Main content area -->
+		<main>
+			<h1>Martial Arts</h1>
+
+			<section>
+				<h2>Karate</h2>
+
+				<article>
+					<p>In large part due to The Karate Kid, I was always enamored with martial arts. I took karate for about a year and a half while in high school; I loved it and earned a brown belt. It did wonders for my self-confidence, but I ultimately had to make the hard decision to give it up to play baseball and basketball.</p>
+				</article>
+
+				<h2>Tae Kwon Do</h2>
+
+				<article>
+					<h3>Training</h3>
+					<p>As an adult, I joined a Tae Kwon Do class with 5 of my kids and loved every minute of it. I was determined to achieve my childhood dream of earning a black belt.</p>
+					<p>The journey was not without its challenges, though. In addition to breaking lots of boards, I broke a few toes along the way. The biggest hurdle, however, was coming back from breaking my fibula in two places while sparring during a belt test.</p>
+					
+					<!-- Aside with related image -->
+					<aside>	
+						<figure>
+							<img src="./assets/images/xray.jpg" alt="Broken Fibula X-ray" height="291" width="150">
+							<figcaption>Broken Leg X-ray</figcaption>
+						</figure>
+					</aside>
+				
+
+					<p>I worked hard to rehab and get back on track, eventually achieving my goal by earning a black belt at 41 years old. I then went a step further and earned my 2nd degree black belt.
+
+					<p>Part of the final test required breaking 4 pieces of wood -- one with each arm and each leg. But I've never been one to do the minimum, so I taped boards together, broke a total of 8 pieces of wood, and threw in some concrete for good measure.</p>
+
+					<figure>
+						<video src="./assets/video/2nd_dan_breaking.mp4" height="276" width="480" preload controls>
+							<p>Board Breaking</p>
+						</video>
+						<figcaption>Breaking Brad</figcaption>
+					</figure>
+
+					<h3>Teaching</h3>
+					<p>Combining my passions for martial arts and <a href="family.html#fostering">children in foster care</a>, I had the opportunity to assist and then take over teaching a tae kwon do class at a group home for a few years. Unfortunately, that ended with covid lockdowns.
+				</article>
+
+			</section>
+
+		</main>
+
+
+		<!-- Vue.js Footer Component -->
+		<footer id="vueFooter">
+			<site-footer></site-footer>
+		</footer>
+
+		<!-- Load the script that activates the vue.js footer component -->
+		<script type="module" src="./assets/scripts/vue_footer_component.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,29 @@
+/* Table CSS Styles */
+table {
+	border-collapse: collapse;
+}
+
+th, td {
+	font-size: .8em;
+	padding: 3px 20px 3px 5px;
+}
+
+th {
+	background-color: var(--drpepper-dark);
+	color: white;
+	font-weight: 500;
+	text-align: left;
+}
+
+tr:nth-child(even) {
+	background-color: #D3D3D3;
+}
+
+tr:hover {
+	background-color: var(--drpepper-light);
+	color: white;
+}
+
+td {
+	border-bottom: 1px solid var(--drpepper-dark);
+}

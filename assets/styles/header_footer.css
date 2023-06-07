@@ -1,0 +1,232 @@
+/* Standard header styling, including fixing the position at the top of the screen */
+header {
+	width: 100%;
+	position: fixed;
+	top: 0;
+
+	padding:0;
+	text-align:center;
+	color: white;
+	background-color: var(--drpepper-dark);
+	box-shadow: 0px 0px 15px var(--drop-shadow);
+}
+
+
+/* Main Menu -- Navigation link styling, including making the links look and act like buttons */
+nav#main-menu ul {
+	list-style: none;
+	padding: 0;
+}
+
+nav#main-menu li {
+	display: inline-block;
+	width: 5em;
+	padding: 3px;
+	border: 1px solid white;
+	border-radius: 3px;
+	margin:0px 0px;
+}
+
+nav#main-menu #ma {
+	width:6.5em;
+}
+
+nav#main-menu ul li a {
+	text-decoration: none;
+	color: var(--drpepper-dark);
+	background-color: white;
+	display:inline-block;
+	width:100%;
+}
+
+nav#main-menu ul li a:hover {
+	background-color: var(--drpepper-dark);
+	color: white;
+}
+
+
+/* Standard footer styling, including fixing the position at the bottom of the screen */
+footer {
+	height: 50px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+
+	text-align: center;
+	color: white;
+	background-color: black;
+	box-shadow: 0px 0px 15px var(--drop-shadow);
+}
+
+footer details {
+	display:inline-block;
+	margin-top: 10px;
+}
+
+footer details p {
+	margin: 0;
+}
+
+footer a {
+	color:white;
+}
+
+footer a#top {
+	margin: 10px 10px 0px 0px;
+	float:right;
+}
+
+
+
+/* Responsive Hamburger Menu CSS
+
+	Code adapted from: https://alvarotrigo.com/blog/hamburger-menu-css-responsive/
+
+*/
+
+
+  
+/* Overlay to show behind the expanded hamburger menu */
+.overlay{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity .35s, visibility .35s, height .35s;
+	overflow: hidden;
+	background: black;
+	z-index: -1;
+}
+
+
+/***************************************************************************************************************/
+/*
+body {
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+	min-height: 200vh;
+	font-family: Verdana, Sans-serif;
+  }
+
+/* Default menu styling *  /
+#main-menu {
+display: block;
+height: 100px;
+width: 100%;
+background: #3D0E61;
+margin: 0px;  
+z-index: 9;
+}
+
+#main-menu ul {
+max-width: 800px;
+width: 100%;
+height: 100%;
+margin: 0px auto;
+padding: 0px;
+display: flex;
+justify-content: space-evenly;
+align-items: center;
+z-index: 9;
+}
+
+#main-menu li {
+list-style-type: none;
+font-size: 2rem;
+}
+
+#main-menu a {
+color: #B9FAF8;
+font-size: 1.5rem;
+text-decoration: none;
+}
+
+#main-menu a:hover {
+text-decoration: underline;
+}
+*/
+/***************************************************************************************************************/
+
+
+/* Hide the checkbox that toggles the hamburger menu */
+#hamburger-input{
+	display: none;
+}
+
+
+/* Hamburger menu styling */
+#hamburger-menu {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	width: 50px;
+	height: 50px;
+	display: none;
+	border: 2px solid white;
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Cabin', Sans-serif;
+	background: linear-gradient(
+	to bottom, 
+	var(--drpepper-light), var(--drpepper-light) 20%, 
+	white 20%, white 40%, 
+	var(--drpepper-light) 40%, var(--drpepper-light) 60%, 
+	white 60%, white 80%, 
+	var(--drpepper-light) 80%, var(--drpepper-light) 100%
+	);
+}
+
+#hamburger-menu #sidebar-menu {
+	visibility: hidden;
+	position: fixed;
+	top: 0;
+	left: -250px;
+	width: 200px;
+	height: 100%;
+	background-color: var(--drpepper-light);
+	transition: 0.3s;
+	padding: 0px 10px;
+	box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+	color: #B9FAF8;
+	font-size: 1.7rem;
+}
+
+#hamburger-menu ul {
+	padding-left: 0px;
+}
+
+#hamburger-menu li {
+	list-style-type: none;
+	line-height: 3rem;
+	width: auto;
+}
+
+#hamburger-menu a {
+	color: #B9FAF8;
+	font-size: 1.3rem;
+	text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+	text-decoration: underline;
+	background-color: inherit;
+	cursor: inherit;
+}
+
+/* Display the expanded hamburger menu and the background overlay when the hidden checkbox is selected to toggle the menu */
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+	visibility: visible;
+	left: 0;
+}
+
+#hamburger-input:checked ~ .overlay{
+	visibility: visible;
+	opacity: 0.4;
+}

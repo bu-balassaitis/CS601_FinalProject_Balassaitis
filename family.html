@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="./assets/styles/main.css" rel="stylesheet">
+		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+		<title>The Brad-y Bunch</title>
+	</head>
+
+	<body>
+		<!-- Vue.js Header Component -->
+		<header id="vueHeader">
+			<site-header></site-header>
+		</header>
+
+		<!-- Load the script that activates the vue.js header component -->
+		<script type="module" src="./assets/scripts/vue_header_component.js"></script>
+
+
+		<!-- Main content area -->
+		<main id="family">
+			<h1>Family</h1>
+
+			<div class="grid">
+
+				<section>
+					<h2>Getting Started</h2>
+
+					<article>
+						<p>My wife and I met in church at 19, got engaged the following year, and got married at 22 in 1998. We were able to get married before I was done college, due to <a href="education.html#drexel">my great experience at Drexel University</a>.</p>
+
+						<p>We had a son in 2001 and a daughter in 2005.</p>
+					</article>
+
+				</section>
+				<section>
+
+					<h2 id="fostering">Fostering</h2>
+
+					<article>
+						<p>From the earliest days of our marriage, we felt compelled by the Bible verse <a href="https://www.bible.com/bible/111/JAS.1.27.NIV" target="_blank">James 1:27 <img src="./assets/images/external_link_icon.png" alt="External Link Icon" height="16" width="16"></a> to care for (permanently or temporarily) orphaned children.</p>
+						<p>We initially thought this would be through international adoption, but, in 2008, we turned our focus to providing foster care for children in our own community. This has become one of the defining aspects of our lives.</p>
+						<p>Since that time, we have fostered nearly 20 children between the ages of 1 and 19 from anywhere between a month and well over a year.</p>
+					</article>
+				</section>
+
+				<section>
+					<h2>Adoption</h2>
+
+					<article>
+						<p>Several children that have been in our foster care have not had a safe place to return home, so we have been blessed to have the opportunity to adopt.</p>
+
+						<ul>
+							<li>In 2011, we adopted a sibling group of four, ages 7, 9, 12, and 14</li>
+							<li>In 2018, we adopted a 12-year-old girl</li>
+							<li>We are currently in the process of adopting a 17-year-old boy</li>
+						</ul>
+					
+					</article>
+				</section>
+
+				<!-- Aside with related image -->
+				<aside class="picture">	
+					<figure>
+						<img src="./assets/images/family.jpg" alt="Family Picture" height="266" width="400">
+						<figcaption>This is the closest we've gotten to all of my kids in one picture</figcaption>
+					</figure>
+				</aside>
+			</div>
+		</main>
+
+
+		<!-- Vue.js Footer Component -->
+		<footer id="vueFooter">
+			<site-footer></site-footer>
+		</footer>
+
+		<!-- Load the script that activates the vue.js footer component -->
+		<script type="module" src="./assets/scripts/vue_footer_component.js"></script>
+
+	</body>
+</html>
