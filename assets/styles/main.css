@@ -74,6 +74,20 @@ img.logo {
 	float: right;
 }
 
+/* Centered Image */
+img.ctr {
+	display:block;
+	margin: 0 auto;
+}
+
+.no-top-margin {
+	margin-top: 0;
+}
+
+.no-bottom-margin {
+	margin-bottom: 0;
+}
+
 /* Button on API pages */
 input.api_button {
 	background-color: var(--drpepper-dark);

@@ -1,8 +1,4 @@
 /* Figure CSS Styles */
-figure {
-	/* float:right; */
-}
-
 figure img {
 	margin:20px;
 	box-shadow: 0px 0px 20px 3px var(--drop-shadow);
@@ -11,6 +7,16 @@ figure img {
 figure img:hover {
 	box-shadow: 0px 0px 20px 15px var(--drpepper-dark);
 	transform: scale(1.25);
+}
+
+figure.no-shadow img {
+	margin: 0;
+	box-shadow:none;
+}
+
+figure.no-shadow img:hover {
+	box-shadow:none;
+	transform:none;
 }
 
 

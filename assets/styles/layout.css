@@ -6,12 +6,16 @@
 	column-gap:20px;
 }
 
-#education .grid {
+#education .grid, #location .grid {
 	grid-template-columns:repeat(2, 1fr);
 }
 
 #family .grid, #fandom .grid  {
 	grid-template-columns:repeat(3, 1fr);
+}
+
+#players .grid {
+	grid-template-columns: 3fr 1fr;
 }
 
 
@@ -37,9 +41,14 @@ section {
 
 /* Smaller screen size -- change the grid to a 2-column layout */
 @media (max-width: 1366px) {
-	#education .grid, #family .grid, #fandom .grid, #location .grid {
+	#education .grid, #family .grid, #fandom .grid {
 		display:grid;
 		grid-template-columns: repeat(2, 1fr);
+	}
+
+	 #location .grid, #players.grid {
+		display:grid;
+		grid-template-columns: 1fr;
 	}
 
 	aside.picture {
@@ -65,7 +74,7 @@ section {
 	}
 
 
-	#education .grid, #family .grid, #fandom .grid, #location .grid {
+	#education .grid, #family .grid, #fandom .grid, #location .grid, #players .grid {
 		display:grid;
 		grid-template-columns: 1fr;
 	}

@@ -41,7 +41,7 @@ Vue.component ('SiteHeader', {
 const vueApp = new Vue({
     el:'#vueHeader',
     data: {
-        pageTitle: "It's A Big, Brad World",
+        pageTitle: "Brad Nauseum",
         navLinks: [
             {link: 'index.html', linkText:'About'},
             {link: 'family.html', linkText:'Family'},

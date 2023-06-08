@@ -8,7 +8,7 @@
         <script src="./assets/scripts/apis.js"></script>
 		<script src="./assets/scripts/validation.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-		<title></title>
+		<title>Brad Astra</title>
     </head>
 
     <body>
@@ -20,37 +20,46 @@
 		<!-- Load the script that activates the vue.js header component -->
 		<script type="module" src="./assets/scripts/vue_header_component.js"></script>
 
-        <main class="players">
+        <main class="players" id="players">
 			<h1>Favorite Players</h1>
 
-			<section class="no-border">
-				<article>
-					<p>This page is backed by a NoSql database to store a list of my favorite players</p>
+			<div class="grid">
 
-					<form id="addPlayer" onsubmit="return false;">
+				<section class="no-border">
+					<article>
+						<p>This page is backed by a NoSql database to store a list of my favorite players</p>
 
-						<label for="name">Name</label>
-						<label for="team">Team</label>
-						<label for="position">Position</label>
+						<form id="addPlayer" onsubmit="return false;">
 
-						<input type="text" name="name" id="name" required pattern="^[a-zA-Z0-9 ,.]{8,}$" autofocus tabindex="1">
-						<input type="text" name="team" id="team" required pattern="^[a-zA-Z0-9 ]{10,}$" tabindex="2">
-						<input type="text" name="position" id="position" required tabindex="3">
+							<label for="name">Name</label>
+							<label for="team">Team</label>
+							<label for="position">Position</label>
 
-						<span class="error" id="error_name"></span>
-						<span class="error" id="error_team"></span>
-						<span class="error" id="error_position"></span>
-		
-						<input type="button" id="btnAddPlayer" class="api_button" value="Add Player" onclick="addPlayer()" disabled>
-					</form>
+							<input type="text" name="name" id="name" required pattern="^[a-zA-Z0-9 ,.]{8,}$" autofocus tabindex="1">
+							<input type="text" name="team" id="team" required pattern="^[a-zA-Z0-9 ]{10,}$" tabindex="2">
+							<input type="text" name="position" id="position" required tabindex="3">
+
+							<span class="error" id="error_name"></span>
+							<span class="error" id="error_team"></span>
+							<span class="error" id="error_position"></span>
+			
+							<input type="button" id="btnAddPlayer" class="api_button" value="Add Player" onclick="addPlayer()" disabled>
+						</form>
 
 
-                    <input type="button" class="api_button" value="Display Players" onclick="showPlayers()">
-					
-                    <div id="data"></div>
-					<div id="error"></div>
-				</article>
-			</section>
+						<input type="button" class="api_button" value="Display Players" onclick="showPlayers()">
+						
+						<div id="data"></div>
+						<div id="error"></div>
+					</article>
+				</section>
+
+				<figure class="no-shadow">
+					<img src="./assets/images/broad-street-boys.PNG" alt="Broad Street Boys" height="547" width="385">
+					<figcaption></figcaption>
+				</figure>
+
+			</div>
         </main>
 
 		<!-- Vue.js Footer Component -->

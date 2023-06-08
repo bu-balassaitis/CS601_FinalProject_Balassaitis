@@ -7,7 +7,7 @@
 		<link href="./assets/styles/main.css" rel="stylesheet">
         <script src="./assets/scripts/apis.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-		<title></title>
+		<title>Brad Hoc</title>
     </head>
 
     <body>
@@ -19,18 +19,29 @@
 		<!-- Load the script that activates the vue.js header component -->
 		<script type="module" src="./assets/scripts/vue_header_component.js"></script>
 
-        <main>
+        <main id="location">
 			<h1>Check Stock Prices</h1>
 
-			<section class="no-border stock">
-				<article>
-					<label for="StockSymbols">Enter one or more stock symbols, separated by a comma: </label>
-                    <input id="StockSymbols" type="text">
-                    <input type="button" class="api_button" value="Check Stock Prices" onclick="getStockPrices()">
-                    <div id="data"></div>
-                    <div id="error"></div>
-				</article>
-			</section>
+			<div class="grid">
+
+				<section class="no-border stock">
+					<article>
+						<label for="StockSymbols">Enter one or more stock symbols, separated by a comma: </label>
+						<input id="StockSymbols" type="text">
+						<input type="button" class="api_button" value="Check Stock Prices" onclick="getStockPrices()">
+						<div id="data"></div>
+						<div id="error"></div>
+					</article>
+				</section>
+
+				<figure class="no-shadow">
+					<!-- Image source:	https://www.freepik.com/free-vector/gradient-stock-market-concept_20289170.htm
+						Free for personal use-->
+					<img src="./assets/images/stock_ticker.jpg" alt="Stock Ticker" height="400" width="600">
+					<figcaption></figcaption>
+				</figure>
+
+			</div>
         </main>
 
 		<!-- Vue.js Footer Component -->
