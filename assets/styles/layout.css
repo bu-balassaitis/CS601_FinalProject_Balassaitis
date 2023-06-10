@@ -61,6 +61,16 @@ section {
 
 }
 
+/* Adjust main menu styling to fit before it cuts down to the hamburger menu */
+@media (max-width: 1024px) {
+	
+	nav#main-menu li {
+		font-size: .8em;
+		margin:0px 2px;
+		padding:2px;
+	}
+
+}
 
 /* Tablet size -- change bg color to cream, shrink fonts, change to single-column grid. */ 
 @media (max-width: 768px) {
@@ -85,19 +95,6 @@ section {
 		line-height: 1.2em;
 		border-width: 0;
 	}
-
-	/*
-	nav ul {
-		margin: 0.5em 0.2em;
-	}
-
-	nav li {
-		width: 6em;
-		padding: 10px;
-		margin:5px 3px;
-		font-size: .7em;
-	}
-	*/
 
 	header h3 {
 		margin: 0.5em;
