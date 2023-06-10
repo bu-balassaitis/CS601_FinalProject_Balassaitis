@@ -13,7 +13,7 @@ Vue.component ('SiteFooter', {
             <a id="top" onclick="window.scrollTo(0, 0);">Return to top of page</a>
     </span>
     `
-})
+});
 
 
 const vueApp = new Vue({
@@ -24,4 +24,4 @@ const vueApp = new Vue({
         phone: '867-5309',
         email: 'mailto:bradbala@bu.edu'
     }
-})
+});

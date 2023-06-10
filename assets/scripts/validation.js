@@ -28,7 +28,7 @@ function validate() {
 /* Validate the form and return a boolean for whether it passes
 Display error messages accordingly. */
 function isFormValid(frm) {
-    isValid = true;   // Start by assuming true, before running JS validation
+    let isValid = true;   // Start by assuming true, before running JS validation
 
     const PATTERN_NAME = /^[a-zA-Z0-9 ,.]{8,}$/;
     const NAME_ERROR_MSG = "Name must be at least 8 characters";

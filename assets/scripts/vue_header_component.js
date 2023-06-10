@@ -35,7 +35,7 @@ Vue.component ('SiteHeader', {
         <div class="overlay"></div>
     </span>
     `
-})
+});
 
 
 const vueApp = new Vue({
@@ -55,4 +55,4 @@ const vueApp = new Vue({
             {link: 'stock-prices.html', linkText:'Stock Prices', linkTextShort:'Stock'}
         ]
     }
-})
+});

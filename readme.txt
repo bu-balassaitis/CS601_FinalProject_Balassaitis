@@ -11,6 +11,15 @@ Summer 1 - 2023
 
 *************************************************************************************************************
 *************************************************************************************************************
+[CSS]
+Print stylesheet
+	[ ] WHERE USED?
+
+[RWD]
+	> grids
+	> hamburger Menu
+	> changes font sizes in some cases
+
 
 [Hamburger Menu]
 > Added hamburger menu based on: https://alvarotrigo.com/blog/hamburger-menu-css-responsive/
@@ -83,6 +92,19 @@ Players page -- writes table of player data from DB into a driven
 > CHALLENGE
 	Getting two separate API calls going out separately and waiting for both to come back with data
 	I probably overdid it with the async and wait calls at several levels, but it took a lot of tweaking to get it working
+
+
+
+[LINTING NOTES]
+> jslint.com was used to lint the code
+> Notes:
+	The following options need to be enabled to suppress unrelevant warnings:
+		browser, devel, fart, for, long, single, this, unordered, white
+	Even with these settings, there are some anomalies:
+		1) It does not handle for...of loops properly. It's flagging the variable declaration as an error (it is not okay with let,var, or const)
+		2) The linter chokes on arrow functions with single parameters if they don't have parentheses around the single parameter, so I added them throughout so the rest of the linting could compelte
+
+
 
 [About]
 

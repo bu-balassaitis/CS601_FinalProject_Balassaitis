@@ -24,9 +24,9 @@ function getChuckNorrisJoke() {
     // Call the API then retrieve the JSON data and display the value property on the page
     console.log('Calling Chuck Norris API with fetch()...');
     fetch (url)
-        .then(response => response.json())
-        .then(data => document.getElementById('data').innerHTML = data.value || data.status + ' - ' + data.message)
-        .catch(err => document.getElementById('data').innerHTML = 'Error hitting Chuck Norris API: ' + err);
+        .then((response) => response.json())
+        .then((data) => {document.getElementById('data').innerHTML = data.value || data.status + ' - ' + data.message;})
+        .catch((err) => {document.getElementById('data').innerHTML = 'Error hitting Chuck Norris API: ' + err;});
 }
 
 

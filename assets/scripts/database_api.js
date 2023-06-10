@@ -68,7 +68,7 @@ const getPlayers = async () => {
 
     const playerData = await response.json();
     return playerData;
-}
+};
 
 
 // Function to get a list of unique teams for all of the players in the database
@@ -87,7 +87,7 @@ const getTeams = async () => {
 
     const teamData = await response.json();
     return teamData;
-}
+};
 
 
 // Call the functions to look up the player and team data and return a single object with both sets of data
@@ -95,9 +95,9 @@ async function getData() {
 
     // Create an object to return both sets of data
     info = {
-        players: await getPlayers().then(data => data),
-        teams: await getTeams().then(data => data)
-    }
+        players: await getPlayers().then((data) => data),
+        teams: await getTeams().then((data) => data)
+    };
     
     return info;
 }
@@ -117,7 +117,7 @@ async function displayPlayers() {
     console.log('Getting player and team data...');
     let data;
     await getData()
-        .then(dt => data = dt);
+        .then((dt) => data = dt);
 
 
     console.log('Building display...');
@@ -146,7 +146,7 @@ function buildTeamFilterDropDown (teams) {
     if (teams) {
         html = `<div id="filter">Filter: <select name="TeamFilter" id="TeamFilter" onchange="changeFilter()">
             <option value="" ${(!selectedTeam) ? "selected" : ""}>(All Teams)</option>`;
-        for (team of teams) {
+        for (const team of teams) {
             html += `<option value="${team}" ${(selectedTeam === team) ? "selected" : ""}>${team}</option>`;
         }
         html += `</select></div>`;

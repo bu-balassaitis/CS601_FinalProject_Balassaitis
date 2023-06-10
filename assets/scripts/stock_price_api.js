@@ -39,7 +39,7 @@ function getStockPrices() {
 
             // Build a table of responses
             let html = "<table><thead><tr><th>Symbol</th><th>Price</th><th>Volume</th>";
-            for (stock of parsedResponse) {
+            for (const stock of parsedResponse) {
                 html += "<tr><td>" + stock.symbol + "</td><td>" + stock.price + "</td><td>" + stock.volume + "</td></tr>";
             }
 
@@ -53,7 +53,7 @@ function getStockPrices() {
     // let symbols = 'IBM, AAPL,PG, TSLA';
     let symbols = document.getElementById('StockSymbols').value;
 
-    if (symbols.trim() == '') {
+    if (symbols.trim() === '') {
         errorDiv.innerHTML = 'Please enter one or more stock symbols';
         return;
     }
