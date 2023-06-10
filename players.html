@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link href="./assets/styles/main.css" rel="stylesheet">
-        <script src="./assets/scripts/apis.js"></script>
+        <script src="./assets/scripts/database_api.js"></script>
 		<script src="./assets/scripts/validation.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 		<title>Brad Astra</title>
@@ -47,7 +47,7 @@
 						</form>
 
 
-						<input type="button" class="api_button" value="Display Players" onclick="showPlayers()">
+						<input type="button" id="btnDisplayPlayers" class="api_button" value="Display Players" onclick="displayPlayers()">
 						
 						<div id="data"></div>
 						<div id="error"></div>

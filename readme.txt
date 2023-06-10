@@ -42,13 +42,24 @@ IN PROGRESS
 			[Form and Database Interaction]
 			> Created a NoSQL database at restdb.io to power this page
 			> Displays a list of favorite players from the database
-			[ ] > Has a form to add to the list. Then displays the updated list.
-			[ ] > Drop-down to filter by team?
-			Set auto-focus to first field and tab index of input fields
+			> Has a form to add to the list. Then displays the updated list.
+				> Set auto-focus to first field and tab index of input fields
+				> Has validation on the first two required fields -- displays msgs and changes field border to red
+				> Has icon in each row of player data to delete that player
+			> Drop-down to filter by team?
+				> auto-builds drop-down with list of teams from actual data (unique list)
+				> on change of drop-down, re-runs the query and filters the results
+			> Using local storage to store team filter
+				Does this to pre-set the drop-down and remember it between sessions when re-loaded as well
+			
 
 ES6 Features
-	> ?? ?fetch API
+	> fetch API in database API code and chuck norris joke api code
 	> template string for handling error messages on database API call in ___  (METHOD)
+	> local storage in database API code
+	> async/await in database API code
+	> arrow functions with async/await in database API code
+	> Object constructor in database api code
 
 
 [DOM Manipulation]
@@ -69,7 +80,9 @@ Players page -- writes table of player data from DB into a driven
 	I'm sure I could have kept it simpler to get credit for using Vue, but I wanted to do some meaningful learning and the struggle was worth it to get a better understanding
 
 
-
+> CHALLENGE
+	Getting two separate API calls going out separately and waiting for both to come back with data
+	I probably overdid it with the async and wait calls at several levels, but it took a lot of tweaking to get it working
 
 [About]
 

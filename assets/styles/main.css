@@ -228,3 +228,14 @@ input#btnAddPlayer:disabled {
 	cursor:pointer;
 	border-color:white;
 }
+
+#TeamFilter {
+	color: var(--drpepper-dark);
+    border: 3px solid var(--drpepper-dark);
+    border-radius: 4px;
+    font-size: .8em;
+}
+
+#filter {
+	margin: 10px auto;
+}

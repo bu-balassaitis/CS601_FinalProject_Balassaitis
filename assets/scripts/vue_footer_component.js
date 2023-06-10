@@ -10,7 +10,7 @@ Vue.component ('SiteFooter', {
                     </p>
                 </address>
             </details>
-            <a id="top" href="#top">Return to top of page</a>
+            <a id="top" onclick="window.scrollTo(0, 0);">Return to top of page</a>
     </span>
     `
 })

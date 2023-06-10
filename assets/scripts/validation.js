@@ -74,4 +74,3 @@ window.addEventListener("DOMContentLoaded", (event) => {
     frm.name.addEventListener("change", validate);
     frm.team.addEventListener("change", validate);
   });
-
