@@ -143,7 +143,7 @@ Going a step further, the Stock Prices page has a more dynamic API call to check
 	| Invalid stock symbol entered | Displays a message that no data was found |
 	| Mix of invalid and valid stock symbols entered | Displays data for the valid symbols only |
 
-<br><br>
+<br>
 
 ### Complex Database API
 <br>
@@ -164,7 +164,7 @@ Going a step further, the Stock Prices page has a more dynamic API call to check
 ## Vue
 - The project requirement was for a 1 single Vue component, but this site includes 2 components (header & footer) that are shared across all 10 pages
 
-<br><br>
+<br>
 
 # Challenges
 
@@ -210,7 +210,7 @@ I probably overdid it with the async and wait calls at several levels, but it to
 	1. It does not handle for...of loops properly. It's flagging the variable declaration as an error (it is not okay with let,var, or const)
 	2. The linter chokes on arrow functions with single parameters if they don't have parentheses around the single parameter, so I added them throughout so the rest of the linting could compelete
 
-<br><br>
+<br>
 
 
 # Image Attributions
