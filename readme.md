@@ -8,27 +8,29 @@ Summer 1 - 2023
 # About
 
 This project fulfills and exceeds the requirements the course final project. It is a website about key aspects of my life.
+<br><br>
 
-## Pages
+## Site Pages
 
 | Page | Description |
 | ----- | ----- |
-| Index | Home Page with a brief overview |
-| Family | Overview of my family, including our journey with fostering and adoption |
-| Locations | List of areas where I've lived, including embedded Google Maps |
-| Education | Overview of my undergraduate and graduate education |
-| Career | List of some of the more well-known places that I've worked |
-| Fandom | Overview of the recent success of my favorite pro sports teams |
-| Favorite Players | List of some of my favorite players. Stored in a NoSQL database. Provides the ability to view the list, add players, delete players, and filter the list by team. Last selected filter is stored in LocalStorage. |
-| Martial Arts | Overview of my martial arts experience |
-| Chuck Norris Joke | Simple API call to display a random Chuck Norris joke. (Note: some are a little offensive) |
-| Stock Prices | Allows the user to enter one or more stock symbols, then makes an API call to check stock prices. |
-
+| **Index** | Home Page with a brief overview |
+| **Family** | Overview of my family, including our journey with fostering and adoption |
+| **Locations** | List of areas where I've lived, including embedded Google Maps |
+| **Education** | Overview of my undergraduate and graduate education |
+| **Career** | List of some of the more well-known places that I've worked |
+| **Fandom** | Overview of the recent success of my favorite pro sports teams |
+| **Favorite Players** | List of some of my favorite players. Stored in a NoSQL database. Provides the ability to view the list, add players, delete players, and filter the list by team. Last selected filter is stored in LocalStorage. |
+| **Martial Arts** | Overview of my martial arts experience |
+| **Chuck Norris Joke** | Simple API call to display a random Chuck Norris joke. (Note: some are a little offensive) |
+| **Stock Prices** | Allows the user to enter one or more stock symbols, then makes an API call to check stock prices. |
+<br>
 
 *Note: I am a Dad of many children, so I can't help but sneak a bunch of puns in. Most of them can be seen in the window/tab titles. One of the puns doesn't seem to fit the context as well as the others, but it was actually the title of a [presentation I gave](https://www.slideshare.net/balassaitis/the-grid-the-brad-and-the-ugly) at a conference a few years ago*
 <br><br>
 
 ## Project Structure
+<br>
 
 	CS601_FINALPROJECT_Balassaitis
 		|__ assets
@@ -37,7 +39,7 @@ This project fulfills and exceeds the requirements the course final project. It 
 			|__styles
 			|__video
 
-<br><br>
+<br>
 
 ## Running the Site
 
@@ -45,8 +47,8 @@ The repository is stored on Github and the site is hosted with Github Pages
 
 https://github.com/bu-balassaitis/CS601_FinalProject_Balassaitis
 
+<br>
 
-<br><br>
 # Above & Beyond
 
 ## HTML5 & CSS
@@ -97,7 +99,6 @@ https://github.com/bu-balassaitis/CS601_FinalProject_Balassaitis
 ## JavaScript - ES6 Features Used
 <br>
 
-### ES6 Features
 - `let` & `const` used throughout all script
 - `fetch` API used in database and chuck norris joke API code
 - Template Strings used in several places -- most importantly when dynamically generating HTML tables in several places
@@ -119,24 +120,34 @@ There are three different external APIs used by the site. All three were initial
 <br><br>
 
 ### Static API
+<br>
+
 Added a page with a button to make an API call to get and display a random Chuck Norris joke
 
 This uses an `XMLHttpRequest` to make the API call, then parse and display the response on the page
 <br><br>
 
 ### Simple Interactive API
+<br>
+
 Going a step further, the Stock Prices page has a more dynamic API call to check prices
 
 - The user can enter one or more stock symbols (comma-separated)
 - When the button is clicked, it will make the API call, parse the results, and display them in a table on the page dynamically
 - Added on-screen error messages to display if either no symbols are entered or if invalid symbols are entered
 - Tested these cases succesfully:
+
+	| Case | Result |
+	| --- | --- |
 	| No stock symbols entered | Displays a message that no data was found |
 	| Invalid stock symbol entered | Displays a message that no data was found |
 	| Mix of invalid and valid stock symbols entered | Displays data for the valid symbols only |
+
 <br><br>
 
 ### Complex Database API
+<br>
+
 - Created a NoSQL database at restdb.io to provide persistence for the data used on this page
 - Displays a list of favorite players from the database
 - Includes a form to add a player to the list (then display the updated list)
