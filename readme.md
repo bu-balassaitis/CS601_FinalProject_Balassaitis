@@ -45,7 +45,7 @@ This project fulfills and exceeds the requirements the course final project. It 
 
 The repository is stored on Github and the site is hosted with Github Pages
 
-https://github.com/bu-balassaitis/CS601_FinalProject_Balassaitis
+https://bu-balassaitis.github.io/CS601_FinalProject_Balassaitis/
 
 <br>
 
