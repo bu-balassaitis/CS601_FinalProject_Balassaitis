@@ -239,3 +239,17 @@ input#btnAddPlayer:disabled {
 #filter {
 	margin: 10px auto;
 }
+
+
+/* Style the message in the noscript tag */
+noscript {
+	color: red;
+	background-color: darkgray;
+	display: block;
+	text-align: center;
+	font-size: 1.2em;
+	line-height: 2;
+    padding: 5px;
+	width: 70%;
+	margin: 10px auto;
+}
